@@ -1,5 +1,14 @@
 # Changelog
 
+### [1.0.3](https://github.com/ExtendRealityLtd/Tilia.CameraRigs.SpatialSimulator.Unity/compare/v1.0.2...v1.0.3) (2019-11-06)
+
+#### Bug Fixes
+
+* **assets:** move image assets into sub images directory ([3785604](https://github.com/ExtendRealityLtd/Tilia.CameraRigs.SpatialSimulator.Unity/commit/3785604e0700da102efc2951ee376c1acfd2e4e7))
+  > The standard directory structure is to put images into an assets/images directory and not just directly in the assets directory.
+  > 
+  > The files have now been moved over into the correct directory.
+
 ### [1.0.2](https://github.com/ExtendRealityLtd/Tilia.CameraRigs.SpatialSimulator.Unity/compare/v1.0.1...v1.0.2) (2019-11-06)
 
 #### Miscellaneous Chores
