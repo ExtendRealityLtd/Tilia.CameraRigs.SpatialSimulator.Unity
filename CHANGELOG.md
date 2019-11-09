@@ -1,5 +1,14 @@
 # Changelog
 
+### [1.0.6](https://github.com/ExtendRealityLtd/Tilia.CameraRigs.SpatialSimulator.Unity/compare/v1.0.5...v1.0.6) (2019-11-09)
+
+#### Bug Fixes
+
+* **Prefab:** ensure combined rotation axes are continuously processed ([9257ffd](https://github.com/ExtendRealityLtd/Tilia.CameraRigs.SpatialSimulator.Unity/commit/9257ffd26bfcdb0ea1342ed08dea2d15ef424ea3))
+  > The movement axes are passed to a moment processor so they are continually processed each frame to ensure the button press keeps moving the avatar even when the button is still being held down.
+  > 
+  > This concept has now also been applied to the rotational combined actions as they were only picking up immediate changes in the input which worked fine when the mouse was the input type but meant that using an xbox controller for rotational input left the movement jerky because it would only move when the axis value changed.
+
 ### [1.0.5](https://github.com/ExtendRealityLtd/Tilia.CameraRigs.SpatialSimulator.Unity/compare/v1.0.4...v1.0.5) (2019-11-07)
 
 #### Miscellaneous Chores
