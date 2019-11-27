@@ -30,7 +30,7 @@
         "url": "https://github.com/ExtendRealityLtd"
     },
     "dependencies": {
-        "io.extendreality.zinnia.unity": "1.8.0",
+        "io.extendreality.zinnia.unity": "1.8.1",
         "io.extendreality.tilia.input.unityinputmanager": "1.0.4"
     },
     "files": [
