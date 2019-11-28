@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/ExtendRealityLtd/Tilia.CameraRigs.SpatialSimulator.Unity/compare/v1.0.8...v1.1.0) (2019-11-28)
+
+#### Features
+
+* **shaders:** use shaders from tilia shaders package ([1bc3acd](https://github.com/ExtendRealityLtd/Tilia.CameraRigs.SpatialSimulator.Unity/commit/1bc3acd68dc3b418b9a13fc2feb5c5a8bca00347))
+  > The included shader has now been deleted and the Tilia.Utilities.Shaders.Unity package has been included and the required shader from that package is now used.
+
 ### [1.0.8](https://github.com/ExtendRealityLtd/Tilia.CameraRigs.SpatialSimulator.Unity/compare/v1.0.7...v1.0.8) (2019-11-27)
 
 #### Miscellaneous Chores
