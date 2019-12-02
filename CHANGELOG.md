@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.1.4](https://github.com/ExtendRealityLtd/Tilia.CameraRigs.SpatialSimulator.Unity/compare/v1.1.3...v1.1.4) (2019-12-02)
+
+#### Bug Fixes
+
+* **Facade:** remove isPlaying check from change handler ([8eb5016](https://github.com/ExtendRealityLtd/Tilia.CameraRigs.SpatialSimulator.Unity/commit/8eb5016d34b3037c38002f79a35d473ed04a19e0))
+  > There was an issue with Malimbe where change handler properties were running at edit time which would cause issues with the setup of the prefab. The original solution was to add in an isPlaying check to prevent this. A Malimbe fix has now been pushed so the latest version of Zinnia now contains the fix in Malimbe and therefore this check is now no longer required.
+
 ### [1.1.3](https://github.com/ExtendRealityLtd/Tilia.CameraRigs.SpatialSimulator.Unity/compare/v1.1.2...v1.1.3) (2019-12-02)
 
 #### Miscellaneous Chores
