@@ -80,11 +80,6 @@
         [CalledAfterChangeOf(nameof(Target))]
         protected virtual void OnAfterTargetChange()
         {
-            if (!Application.isPlaying)
-            {
-                return;
-            }
-
             CacheTransformData();
         }
     }

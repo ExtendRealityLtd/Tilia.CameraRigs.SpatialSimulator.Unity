@@ -124,11 +124,6 @@
         [CalledAfterChangeOf(nameof(FacingSource))]
         protected virtual void OnAfterFacingSourceChange()
         {
-            if (!Application.isPlaying)
-            {
-                return;
-            }
-
             PositionMutator.FacingDirection = FacingSource;
         }
 
@@ -138,11 +133,6 @@
         [CalledAfterChangeOf(nameof(RotationHorizontalAxis))]
         protected virtual void OnAfterRotationHorizontalAxisChange()
         {
-            if (!Application.isPlaying)
-            {
-                return;
-            }
-
             InternalRotationHorizontalAxis.ClearSources();
             if (RotationHorizontalAxis != null)
             {
@@ -156,11 +146,6 @@
         [CalledAfterChangeOf(nameof(RotationVerticalAxis))]
         protected virtual void OnAfterRotationVerticalAxisChange()
         {
-            if (!Application.isPlaying)
-            {
-                return;
-            }
-
             InternalRotationVerticalAxis.ClearSources();
             if (RotationVerticalAxis != null)
             {
@@ -174,11 +159,6 @@
         [CalledAfterChangeOf(nameof(MovementHorizontalAxis))]
         protected virtual void OnAfterMovementHorizontalAxisChange()
         {
-            if (!Application.isPlaying)
-            {
-                return;
-            }
-
             InternalMovementHorizontalAxis.ClearSources();
             if (MovementHorizontalAxis != null)
             {
@@ -192,11 +172,6 @@
         [CalledAfterChangeOf(nameof(MovementVerticalAxis))]
         protected virtual void OnAfterMovementVerticalAxisChange()
         {
-            if (!Application.isPlaying)
-            {
-                return;
-            }
-
             InternalMovementVerticalAxis.ClearSources();
             if (MovementVerticalAxis != null)
             {
