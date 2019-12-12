@@ -1,5 +1,14 @@
 # Changelog
 
+### [1.1.7](https://github.com/ExtendRealityLtd/Tilia.CameraRigs.SpatialSimulator.Unity/compare/v1.1.6...v1.1.7) (2019-12-12)
+
+#### Miscellaneous Chores
+
+* **deps:** bump io.extendreality.tilia.utilities.shaders.unity ([9678fbd](https://github.com/ExtendRealityLtd/Tilia.CameraRigs.SpatialSimulator.Unity/commit/9678fbd425365284f860fc2e5ca06efa04ffc277))
+  > Bumps [io.extendreality.tilia.utilities.shaders.unity](https://github.com/ExtendRealityLtd/Tilia.Utilities.Shaders.Unity) from 1.0.0 to 1.0.1. - [Release notes](https://github.com/ExtendRealityLtd/Tilia.Utilities.Shaders.Unity/releases) - [Changelog](https://github.com/ExtendRealityLtd/Tilia.Utilities.Shaders.Unity/blob/master/CHANGELOG.md) - [Commits](https://github.com/ExtendRealityLtd/Tilia.Utilities.Shaders.Unity/compare/v1.0.0...v1.0.1)
+  > 
+  > Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
 ### [1.1.6](https://github.com/ExtendRealityLtd/Tilia.CameraRigs.SpatialSimulator.Unity/compare/v1.1.5...v1.1.6) (2019-12-04)
 
 #### Miscellaneous Chores
