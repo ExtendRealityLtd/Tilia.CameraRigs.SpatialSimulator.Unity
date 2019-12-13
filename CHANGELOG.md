@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.1.8](https://github.com/ExtendRealityLtd/Tilia.CameraRigs.SpatialSimulator.Unity/compare/v1.1.7...v1.1.8) (2019-12-13)
+
+#### Bug Fixes
+
+* **Materials:** update material to new shader repo version ([30dd8a8](https://github.com/ExtendRealityLtd/Tilia.CameraRigs.SpatialSimulator.Unity/commit/30dd8a82d29063b5ff05439d5f2c5511cce687d9))
+  > The materials that were pointing to the once included shaders have been updated to point to the shaders that are included in the shader package.
+
 ### [1.1.7](https://github.com/ExtendRealityLtd/Tilia.CameraRigs.SpatialSimulator.Unity/compare/v1.1.6...v1.1.7) (2019-12-12)
 
 #### Miscellaneous Chores
