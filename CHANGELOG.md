@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.1.10](https://github.com/ExtendRealityLtd/Tilia.CameraRigs.SpatialSimulator.Unity/compare/v1.1.9...v1.1.10) (2019-12-30)
+
+#### Bug Fixes
+
+* **Prefab:** set middle mouse button to correct key code ([e29b60b](https://github.com/ExtendRealityLtd/Tilia.CameraRigs.SpatialSimulator.Unity/commit/e29b60b53b159cfaf862d6dad6317193a8bbecd2))
+  > The Button3 button was set to the wrong key code at Mouse 3 instead of Mouse 2, which is in fact the middle mouse button key binding.
+
 ### [1.1.9](https://github.com/ExtendRealityLtd/Tilia.CameraRigs.SpatialSimulator.Unity/compare/v1.1.8...v1.1.9) (2019-12-17)
 
 #### Miscellaneous Chores
