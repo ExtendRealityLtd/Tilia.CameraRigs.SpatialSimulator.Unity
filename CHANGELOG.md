@@ -1,5 +1,14 @@
 # Changelog
 
+### [1.1.13](https://github.com/ExtendRealityLtd/Tilia.CameraRigs.SpatialSimulator.Unity/compare/v1.1.12...v1.1.13) (2020-01-02)
+
+#### Bug Fixes
+
+* **package.json:** include namespace in package name ([cc74f7b](https://github.com/ExtendRealityLtd/Tilia.CameraRigs.SpatialSimulator.Unity/commit/cc74f7b82dbb4b5d354a99da91e2ddcbaf700140))
+  > The package name was missing the CameraRigs namespace which should be included as is with all other Tilia packages.
+  > 
+  > This has now been added and the installation guide has been updated to reflect this change.
+
 ### [1.1.12](https://github.com/ExtendRealityLtd/Tilia.CameraRigs.SpatialSimulator.Unity/compare/v1.1.11...v1.1.12) (2020-01-02)
 
 #### Miscellaneous Chores
