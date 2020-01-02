@@ -1,5 +1,5 @@
 {
-    "name": "io.extendreality.tilia.spatialsimulator.unity",
+    "name": "io.extendreality.tilia.camerarigs.spatialsimulator.unity",
     "displayName": "Tilia CameraRigs SpatialSimulator Unity",
     "description": "A camera rig prefab that simulates spatial hardware for the Unity software.",
     "version": "1.1.12",
