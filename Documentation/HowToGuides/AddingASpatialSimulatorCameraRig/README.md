@@ -20,7 +20,7 @@ The outcome of this How-To Guide is to learn how to add the Spatial Simulator Ca
 
 ### Step 1
 
-Expand the `Tilia CameraRigs SpatialSimulator Unity` Package directory in the Unity Project window and select then `Packages -> Tilia CameraRigs SpatialSimulator Unity -> Runtime -> Prefabs` directory then drag and drop the `CameraRigs.SpatialSimulator` prefab into the Hierarchy window.
+Expand the `Tilia CameraRigs SpatialSimulator Unity` Package directory in the Unity Project window and select the `Packages -> Tilia CameraRigs SpatialSimulator Unity -> Runtime -> Prefabs` directory then drag and drop the `CameraRigs.SpatialSimulator` prefab into the Hierarchy window.
 
 ![Adding Prefab To Scene](assets/images/AddingPrefabToScene.png)
 
