@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.1.16](https://github.com/ExtendRealityLtd/Tilia.CameraRigs.SpatialSimulator.Unity/compare/v1.1.15...v1.1.16) (2020-02-25)
+
+#### Bug Fixes
+
+* **HowToGuides:** provide correct spelling in guide ([a0947bd](https://github.com/ExtendRealityLtd/Tilia.CameraRigs.SpatialSimulator.Unity/commit/a0947bd604298ebd79ad3c3751825bf3a3eba722))
+  > There was an incorrect spelling that has now been corrected.
+
 ### [1.1.15](https://github.com/ExtendRealityLtd/Tilia.CameraRigs.SpatialSimulator.Unity/compare/v1.1.14...v1.1.15) (2020-02-24)
 
 #### Miscellaneous Chores
