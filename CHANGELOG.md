@@ -1,5 +1,14 @@
 # Changelog
 
+### [1.1.17](https://github.com/ExtendRealityLtd/Tilia.CameraRigs.SpatialSimulator.Unity/compare/v1.1.16...v1.1.17) (2020-03-05)
+
+#### Miscellaneous Chores
+
+* **deps:** bump io.extendreality.zinnia.unity from 1.12.0 to 1.14.0 ([cbd07f8](https://github.com/ExtendRealityLtd/Tilia.CameraRigs.SpatialSimulator.Unity/commit/cbd07f849313df23bdbf060c504ab0b3b779199e))
+  > Bumps [io.extendreality.zinnia.unity](https://github.com/ExtendRealityLtd/Zinnia.Unity) from 1.12.0 to 1.14.0. - [Release notes](https://github.com/ExtendRealityLtd/Zinnia.Unity/releases) - [Changelog](https://github.com/ExtendRealityLtd/Zinnia.Unity/blob/master/CHANGELOG.md) - [Commits](https://github.com/ExtendRealityLtd/Zinnia.Unity/compare/v1.12.0...v1.14.0)
+  > 
+  > Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
 ### [1.1.16](https://github.com/ExtendRealityLtd/Tilia.CameraRigs.SpatialSimulator.Unity/compare/v1.1.15...v1.1.16) (2020-02-25)
 
 #### Bug Fixes
