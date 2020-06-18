@@ -8,9 +8,7 @@
 
 ## Introduction
 
-The Spatial Simulator CameraRig prefab provides a simulated camera that mimics the rotation and position of a HMD as well as providing simulated spatial controllers.
-
-The outcome of this How-To Guide is to learn how to add the Spatial Simulator CameraRig prefab to the scene and configure it accordingly.
+The `CameraRigs.SpatialSimulator` prefab provides a simulated camera that mimics the rotation and position of a HMD as well as providing simulated spatial controllers.
 
 ## Prerequisites
 
@@ -26,7 +24,7 @@ Expand the `Tilia CameraRigs SpatialSimulator Unity` Package directory in the Un
 
 ### Step 2
 
-Delete the `Main Camera` GameObject from the Unity Hierarchy window as the `CameraRigs.SpatialSimulator` prefab contains a `Main Camera` for the Scene.
+Delete the `Main Camera` GameObject from the Unity Hierarchy window as the `CameraRigs.SpatialSimulator` prefab contains a Main Camera for the Scene.
 
 ### Step 3
 
@@ -40,30 +38,30 @@ Now you have a Spatial Simulator CameraRig in your scene. If you play the Unity 
 
 #### Movement
 
-* *W* - Move current object forward.
-* *A* - Move current object left.
-* *S* - Move current object backward.
-* *D* - Move current object right.
+* `W` - Move current object forward.
+* `A` - Move current object left.
+* `S` - Move current object backward.
+* `D` - Move current object right.
 
 #### Rotation
 
-* *Mouse* - Rotate current object up/down/left/right
-* *Mouse Scroll Wheel* - Optional circular axis (e.g. mimics rotating finger around a trackpad).
+* `Mouse` - Rotate current object up/down/left/right
+* `Mouse Scroll Wheel` - Optional circular axis (e.g. mimics rotating finger around a trackpad).
 
 #### Buttons
 
-* *Left Mouse Button* - Can be used as button input.
-* *Right Mouse Button* - Can be used as button input.
-* *Middle Mouse Button* - Can be used as button input.
+* `Left Mouse Button` - Can be used as button input.
+* `Right Mouse Button` - Can be used as button input.
+* `Middle Mouse Button` - Can be used as button input.
 
 #### Control
 
-* *1* - Activate movement/rotation of the simulated PlayArea and deactivate movement/rotation of simulated Controllers.
-* *2* - Activate movement/rotation of the simulated Left Controller and deactivate movement/rotation of simulated PlayArea and Right Controller.
-* *3* - Activate movement/rotation of the simulated Right Controller and deactivate movement/rotation of simulated PlayArea and Left Controller.
-* *4* - Reset the position/rotation of the simulated PlayArea back to the default settings.
-* *4* - Reset the position/rotation of the simulated Controllers back to the default settings.
-* *6* - Lock/Unlock mouse cursor to Game window.
+* `1` - Activate movement/rotation of the simulated PlayArea and deactivate movement/rotation of simulated Controllers.
+* `2` - Activate movement/rotation of the simulated Left Controller and deactivate movement/rotation of simulated PlayArea and Right Controller.
+* `3` - Activate movement/rotation of the simulated Right Controller and deactivate movement/rotation of simulated PlayArea and Left Controller.
+* `4` - Reset the position/rotation of the simulated PlayArea back to the default settings.
+* `4` - Reset the position/rotation of the simulated Controllers back to the default settings.
+* `6` - Lock/Unlock mouse cursor to Game window.
 
 > The default input settings can be mapped to external inputs such as an Xbox controller by updated the `Sources` on the relevant `Actions` found within `CameraRigs.SpatialSimulator -> Input`.
 
