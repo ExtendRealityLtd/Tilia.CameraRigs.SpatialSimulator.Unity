@@ -48,11 +48,6 @@
         [RequiresBehaviourState, CalledAfterChangeOf(nameof(XREnabled))]
         protected virtual void OnAfterXREnabledChange()
         {
-            if (!Application.isPlaying)
-            {
-                return;
-            }
-
             XRSettings.enabled = XREnabled;
         }
 
@@ -62,11 +57,6 @@
         [RequiresBehaviourState, CalledAfterChangeOf(nameof(SimulatedFrameRate))]
         protected virtual void OnAfterSimulatedFrameRateChange()
         {
-            if (!Application.isPlaying)
-            {
-                return;
-            }
-
             Time.fixedDeltaTime = Time.timeScale / SimulatedFrameRate;
         }
     }
