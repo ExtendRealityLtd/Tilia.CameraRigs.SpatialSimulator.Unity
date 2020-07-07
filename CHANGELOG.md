@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.2.2](https://github.com/ExtendRealityLtd/Tilia.CameraRigs.SpatialSimulator.Unity/compare/v1.2.1...v1.2.2) (2020-07-07)
+
+#### Bug Fixes
+
+* **Configurator:** remove application is playing checks ([2ce578d](https://github.com/ExtendRealityLtd/Tilia.CameraRigs.SpatialSimulator.Unity/commit/2ce578d94c3be783e47bc12d7a562ce2943d5465))
+  > These checks were added when there was a problem with the BehaviourChange Malimbe methods, but this has long been fixed so the BehaviourChange methods only ever execute when the application is playing.
+
 ### [1.2.1](https://github.com/ExtendRealityLtd/Tilia.CameraRigs.SpatialSimulator.Unity/compare/v1.2.0...v1.2.1) (2020-07-03)
 
 #### Miscellaneous Chores
