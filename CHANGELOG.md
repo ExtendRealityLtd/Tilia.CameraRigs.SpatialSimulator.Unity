@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.2.20](https://github.com/ExtendRealityLtd/Tilia.CameraRigs.SpatialSimulator.Unity/compare/v1.2.19...v1.2.20) (2020-12-11)
+
+#### Bug Fixes
+
+* **HowToGuides:** apply document styling guidelines ([f516b1e](https://github.com/ExtendRealityLtd/Tilia.CameraRigs.SpatialSimulator.Unity/commit/f516b1e9202ec666898c62a98de18155172aa08c))
+  > The document style guidelines have been updated and now have been applied to the guides in this repo.
+
 ### [1.2.19](https://github.com/ExtendRealityLtd/Tilia.CameraRigs.SpatialSimulator.Unity/compare/v1.2.18...v1.2.19) (2020-11-01)
 
 #### Miscellaneous Chores
