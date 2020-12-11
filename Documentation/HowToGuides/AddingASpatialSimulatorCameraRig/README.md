@@ -18,7 +18,7 @@ The `CameraRigs.SpatialSimulator` prefab provides a simulated camera that mimics
 
 ### Step 1
 
-Expand the `Tilia CameraRigs SpatialSimulator Unity` Package directory in the Unity Project window and select the `Packages -> Tilia CameraRigs SpatialSimulator Unity -> Runtime -> Prefabs` directory then drag and drop the `CameraRigs.SpatialSimulator` prefab into the Hierarchy window.
+Expand the `Tilia CameraRigs SpatialSimulator Unity` package directory in the Unity Project window and select the `Packages -> Tilia CameraRigs SpatialSimulator Unity -> Runtime -> Prefabs` directory then drag and drop the `CameraRigs.SpatialSimulator` prefab into the Unity Hierarchy window.
 
 ![Adding Prefab To Scene](assets/images/AddingPrefabToScene.png)
 
@@ -28,7 +28,7 @@ Delete the `Main Camera` GameObject from the Unity Hierarchy window as the `Came
 
 ### Step 3
 
-Select the `CameraRigs.SpatialSimulator` GameObject in the Hierarchy window and change the `Simulated Frame Rate` property in the `Spatial Simulator Configurator` component to mimic the headset refresh rate of any spatial hardware. By default this is set to `90` which mimics a refresh rate of 90hz.
+Select the `CameraRigs.SpatialSimulator` GameObject in the Unity Hierarchy window and change the `Simulated Frame Rate` property in the `Spatial Simulator Configurator` component to mimic the headset refresh rate of any spatial hardware. By default this is set to `90` which mimics a refresh rate of 90hz.
 
 ![Configure Tracking Space Type](assets/images/ConfigureFrameRate.png)
 
