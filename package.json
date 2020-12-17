@@ -2,7 +2,7 @@
     "name": "io.extendreality.tilia.camerarigs.spatialsimulator.unity",
     "displayName": "Tilia CameraRigs SpatialSimulator Unity",
     "description": "A camera rig prefab that simulates spatial hardware for the Unity software.",
-    "version": "1.2.24",
+    "version": "1.2.25",
     "unity": "2018.3",
     "unityRelease": "10f1",
     "keywords": [
