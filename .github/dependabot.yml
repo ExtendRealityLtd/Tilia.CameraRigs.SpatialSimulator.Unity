@@ -1,0 +1,17 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "09:00"
+    timezone: Europe/Berlin
+  open-pull-requests-limit: 10
+  reviewers:
+  - thestonefox
+  labels:
+  - dependency-update
+  versioning-strategy: increase
+  commit-message:
+    prefix: chore
+    include: scope
