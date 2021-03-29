@@ -42,6 +42,12 @@
         [Serialized]
         [field: DocumentedByXml]
         public FloatAction RotationVerticalAxis { get; set; }
+        /// <summary>
+        /// The circular axis that controls the rotation of the <see cref="Target"/>.
+        /// </summary>
+        [Serialized]
+        [field: DocumentedByXml]
+        public FloatAction RotationCircularAxis { get; set; }
         #endregion
         #region Movement Settings
         /// <summary>
@@ -84,6 +90,12 @@
         [field: DocumentedByXml, Restricted]
         public FloatAction InternalRotationVerticalAxis { get; set; }
         /// <summary>
+        /// The internal <see cref="FloatAction"/> that controls the circular rotation values.
+        /// </summary>
+        [Serialized]
+        [field: DocumentedByXml, Restricted]
+        public FloatAction InternalRotationCircularAxis { get; set; }
+        /// <summary>
         /// The internal <see cref="FloatAction"/> that controls the horizontal movement values.
         /// </summary>
         [Serialized]
@@ -104,6 +116,7 @@
 
             InternalRotationHorizontalAxis.RunWhenActiveAndEnabled(() => OnAfterRotationHorizontalAxisChange());
             InternalRotationVerticalAxis.RunWhenActiveAndEnabled(() => OnAfterRotationVerticalAxisChange());
+            InternalRotationCircularAxis.RunWhenActiveAndEnabled(() => OnAfterRotationCircularAxisChange());
             InternalMovementHorizontalAxis.RunWhenActiveAndEnabled(() => OnAfterMovementHorizontalAxisChange());
             InternalMovementVerticalAxis.RunWhenActiveAndEnabled(() => OnAfterMovementVerticalAxisChange());
         }
@@ -150,6 +163,19 @@
             if (RotationVerticalAxis != null)
             {
                 InternalRotationVerticalAxis.AddSource(RotationVerticalAxis);
+            }
+        }
+
+        /// <summary>
+        /// Called after <see cref="RotationCircularAxis"/> has been changed.
+        /// </summary>
+        [CalledAfterChangeOf(nameof(RotationCircularAxis))]
+        protected virtual void OnAfterRotationCircularAxisChange()
+        {
+            InternalRotationCircularAxis.ClearSources();
+            if (RotationCircularAxis != null)
+            {
+                InternalRotationCircularAxis.AddSource(RotationCircularAxis);
             }
         }
 
