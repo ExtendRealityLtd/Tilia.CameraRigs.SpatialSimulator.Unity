@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.0](https://github.com/ExtendRealityLtd/Tilia.CameraRigs.SpatialSimulator.Unity/compare/v1.2.37...v1.3.0) (2021-03-29)
+
+#### Features
+
+* **Input:** mouse scroll wheel rotates controllers around local z axis ([22f637d](https://github.com/ExtendRealityLtd/Tilia.CameraRigs.SpatialSimulator.Unity/commit/22f637d8f4729367725e19efa7f76f1c57d8358d))
+  > Maps the scroll wheel action to the local eulers Z rotation of the enabled simulated controller.
+
 ### [1.2.37](https://github.com/ExtendRealityLtd/Tilia.CameraRigs.SpatialSimulator.Unity/compare/v1.2.36...v1.2.37) (2021-03-29)
 
 #### Miscellaneous Chores
