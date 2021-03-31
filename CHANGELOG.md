@@ -1,5 +1,14 @@
 # Changelog
 
+### [1.3.1](https://github.com/ExtendRealityLtd/Tilia.CameraRigs.SpatialSimulator.Unity/compare/v1.3.0...v1.3.1) (2021-03-31)
+
+#### Miscellaneous Chores
+
+* **deps:** bump io.extendreality.tilia.input.unityinputmanager ([3fb6a49](https://github.com/ExtendRealityLtd/Tilia.CameraRigs.SpatialSimulator.Unity/commit/3fb6a49f453ae2942f78b38db4436e5edf2f83dd))
+  > Bumps [io.extendreality.tilia.input.unityinputmanager](https://github.com/ExtendRealityLtd/Tilia.Input.UnityInputManager) from 1.3.19 to 1.3.20. - [Release notes](https://github.com/ExtendRealityLtd/Tilia.Input.UnityInputManager/releases) - [Changelog](https://github.com/ExtendRealityLtd/Tilia.Input.UnityInputManager/blob/master/CHANGELOG.md) - [Commits](https://github.com/ExtendRealityLtd/Tilia.Input.UnityInputManager/compare/v1.3.19...v1.3.20)
+  > 
+  > Signed-off-by: dependabot[bot] <support@github.com>
+
 ## [1.3.0](https://github.com/ExtendRealityLtd/Tilia.CameraRigs.SpatialSimulator.Unity/compare/v1.2.37...v1.3.0) (2021-03-29)
 
 #### Features
