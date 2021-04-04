@@ -18,9 +18,7 @@ The `CameraRigs.SpatialSimulator` prefab provides a simulated camera that mimics
 
 ### Step 1
 
-Expand the `Tilia CameraRigs SpatialSimulator Unity` package directory in the Unity Project window and select the `Packages -> Tilia CameraRigs SpatialSimulator Unity -> Runtime -> Prefabs` directory then drag and drop the `CameraRigs.SpatialSimulator` prefab into the Unity Hierarchy window.
-
-![Adding Prefab To Scene](assets/images/AddingPrefabToScene.png)
+Add a `CameraRigs.SpatialSimulator` prefab to the Unity project hierarchy by selecting `GameObject -> Tilia -> Prefabs -> CameraRigs -> CameraRigs.SpatialSimulator` from the Unity main top menu.
 
 ### Step 2
 

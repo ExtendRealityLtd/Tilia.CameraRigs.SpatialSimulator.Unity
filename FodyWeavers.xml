@@ -2,6 +2,6 @@
 
 <Weavers>
   <Malimbe.FodyRunner>
-    <AssemblyNameRegex>^Tilia</AssemblyNameRegex>
+    <AssemblyNameRegex>^Tilia.CameraRigs.SpatialSimulator</AssemblyNameRegex>
   </Malimbe.FodyRunner>
 </Weavers>
