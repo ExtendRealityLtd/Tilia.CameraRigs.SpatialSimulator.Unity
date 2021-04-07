@@ -1,0 +1,17 @@
+{
+    "name": "Tilia.CameraRigs.SpatialSimulator.Unity.Editor",
+    "references": [
+        "Zinnia.Editor"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
