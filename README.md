@@ -39,7 +39,7 @@ Code released under the [MIT License][License].
 [Version-Release]: https://img.shields.io/github/release/ExtendRealityLtd/Tilia.CameraRigs.SpatialSimulator.Unity.svg
 [project coding conventions]: https://github.com/ExtendRealityLtd/.github/blob/master/CONVENTIONS/UNITY3D.md
 
-[Tilia-Image]: https://user-images.githubusercontent.com/1029673/67681496-5bf10700-f985-11e9-9413-e61801b6eab5.png
+[Tilia-Image]: https://raw.githubusercontent.com/ExtendRealityLtd/related-media/main/github/readme/tilia.png
 [License]: LICENSE.md
 [Documentation]: Documentation/
 [How To Guides]: Documentation/HowToGuides/
