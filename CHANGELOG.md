@@ -1,5 +1,14 @@
 # Changelog
 
+### [1.4.6](https://github.com/ExtendRealityLtd/Tilia.CameraRigs.SpatialSimulator.Unity/compare/v1.4.5...v1.4.6) (2021-06-10)
+
+#### Miscellaneous Chores
+
+* **deps:** bump io.extendreality.tilia.utilities.shaders.unity ([1e96d2a](https://github.com/ExtendRealityLtd/Tilia.CameraRigs.SpatialSimulator.Unity/commit/1e96d2aa5d0ed31aadaaf81bb4b282b08f92669a))
+  > Bumps [io.extendreality.tilia.utilities.shaders.unity](https://github.com/ExtendRealityLtd/Tilia.Utilities.Shaders.Unity) from 1.1.0 to 1.2.0. - [Release notes](https://github.com/ExtendRealityLtd/Tilia.Utilities.Shaders.Unity/releases) - [Changelog](https://github.com/ExtendRealityLtd/Tilia.Utilities.Shaders.Unity/blob/master/CHANGELOG.md) - [Commits](https://github.com/ExtendRealityLtd/Tilia.Utilities.Shaders.Unity/compare/v1.1.0...v1.2.0)
+* **README.md:** update title logo to related-media repo ([bac2523](https://github.com/ExtendRealityLtd/Tilia.CameraRigs.SpatialSimulator.Unity/commit/bac2523fbfa3814ce9a1df283bdd985bb30b6a1f))
+  > The title logo is now located on the related-media repo.
+
 ### [1.4.5](https://github.com/ExtendRealityLtd/Tilia.CameraRigs.SpatialSimulator.Unity/compare/v1.4.4...v1.4.5) (2021-05-09)
 
 #### Miscellaneous Chores
