@@ -11,11 +11,13 @@ Provides a way to configure settings related to the Object Controller prefab.
   * [FacingSource]
   * [InternalMovementHorizontalAxis]
   * [InternalMovementVerticalAxis]
+  * [InternalRotationCircularAxis]
   * [InternalRotationHorizontalAxis]
   * [InternalRotationVerticalAxis]
   * [MovementHorizontalAxis]
   * [MovementVerticalAxis]
   * [PositionMutator]
+  * [RotationCircularAxis]
   * [RotationHorizontalAxis]
   * [RotationMutator]
   * [RotationVerticalAxis]
@@ -24,6 +26,7 @@ Provides a way to configure settings related to the Object Controller prefab.
   * [OnAfterFacingSourceChange()]
   * [OnAfterMovementHorizontalAxisChange()]
   * [OnAfterMovementVerticalAxisChange()]
+  * [OnAfterRotationCircularAxisChange()]
   * [OnAfterRotationHorizontalAxisChange()]
   * [OnAfterRotationVerticalAxisChange()]
   * [OnAfterTargetChange()]
@@ -78,6 +81,16 @@ The internal FloatAction that controls the vertical movement values.
 public FloatAction InternalMovementVerticalAxis { get; set; }
 ```
 
+#### InternalRotationCircularAxis
+
+The internal FloatAction that controls the circular rotation values.
+
+##### Declaration
+
+```
+public FloatAction InternalRotationCircularAxis { get; set; }
+```
+
 #### InternalRotationHorizontalAxis
 
 The internal FloatAction that controls the horizontal rotation values.
@@ -126,6 +139,16 @@ The TransformPositionMutator that applies the movement to the [Target].
 
 ```
 public TransformPositionMutator PositionMutator { get; protected set; }
+```
+
+#### RotationCircularAxis
+
+The circular axis that controls the rotation of the [Target].
+
+##### Declaration
+
+```
+public FloatAction RotationCircularAxis { get; set; }
 ```
 
 #### RotationHorizontalAxis
@@ -200,6 +223,16 @@ Called after [MovementVerticalAxis] has been changed.
 protected virtual void OnAfterMovementVerticalAxisChange()
 ```
 
+#### OnAfterRotationCircularAxisChange()
+
+Called after [RotationCircularAxis] has been changed.
+
+##### Declaration
+
+```
+protected virtual void OnAfterRotationCircularAxisChange()
+```
+
 #### OnAfterRotationHorizontalAxisChange()
 
 Called after [RotationHorizontalAxis] has been changed.
@@ -245,9 +278,11 @@ protected virtual void OnEnable()
 [Target]: ObjectControllerConfigurator.md#Target
 [Target]: ObjectControllerConfigurator.md#Target
 [Target]: ObjectControllerConfigurator.md#Target
+[Target]: ObjectControllerConfigurator.md#Target
 [FacingSource]: ObjectControllerConfigurator.md#FacingSource
 [MovementHorizontalAxis]: ObjectControllerConfigurator.md#MovementHorizontalAxis
 [MovementVerticalAxis]: ObjectControllerConfigurator.md#MovementVerticalAxis
+[RotationCircularAxis]: ObjectControllerConfigurator.md#RotationCircularAxis
 [RotationHorizontalAxis]: ObjectControllerConfigurator.md#RotationHorizontalAxis
 [RotationVerticalAxis]: ObjectControllerConfigurator.md#RotationVerticalAxis
 [Target]: ObjectControllerConfigurator.md#Target
@@ -258,11 +293,13 @@ protected virtual void OnEnable()
 [FacingSource]: #FacingSource
 [InternalMovementHorizontalAxis]: #InternalMovementHorizontalAxis
 [InternalMovementVerticalAxis]: #InternalMovementVerticalAxis
+[InternalRotationCircularAxis]: #InternalRotationCircularAxis
 [InternalRotationHorizontalAxis]: #InternalRotationHorizontalAxis
 [InternalRotationVerticalAxis]: #InternalRotationVerticalAxis
 [MovementHorizontalAxis]: #MovementHorizontalAxis
 [MovementVerticalAxis]: #MovementVerticalAxis
 [PositionMutator]: #PositionMutator
+[RotationCircularAxis]: #RotationCircularAxis
 [RotationHorizontalAxis]: #RotationHorizontalAxis
 [RotationMutator]: #RotationMutator
 [RotationVerticalAxis]: #RotationVerticalAxis
@@ -271,6 +308,7 @@ protected virtual void OnEnable()
 [OnAfterFacingSourceChange()]: #OnAfterFacingSourceChange
 [OnAfterMovementHorizontalAxisChange()]: #OnAfterMovementHorizontalAxisChange
 [OnAfterMovementVerticalAxisChange()]: #OnAfterMovementVerticalAxisChange
+[OnAfterRotationCircularAxisChange()]: #OnAfterRotationCircularAxisChange
 [OnAfterRotationHorizontalAxisChange()]: #OnAfterRotationHorizontalAxisChange
 [OnAfterRotationVerticalAxisChange()]: #OnAfterRotationVerticalAxisChange
 [OnAfterTargetChange()]: #OnAfterTargetChange
