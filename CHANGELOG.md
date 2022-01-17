@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.5.0](https://github.com/ExtendRealityLtd/Tilia.CameraRigs.SpatialSimulator.Unity/compare/v1.4.29...v1.5.0) (2022-01-17)
+
+#### Features
+
+* **prefab:** add device details about headset and controllers ([ea546e5](https://github.com/ExtendRealityLtd/Tilia.CameraRigs.SpatialSimulator.Unity/commit/ea546e59512f57725c6f852cca25dc732922b39a))
+  > The new DeviceDetailsRecord has been extended into the SimulatorNodeRecord that provide information about a simulated node device and this is now stored on the prefab so it is easily available at runtime.
+  > 
+  > The DominantControllerObserver has also been added to the prefab to make it easier to determine the current dominant controller.
+
 ### [1.4.29](https://github.com/ExtendRealityLtd/Tilia.CameraRigs.SpatialSimulator.Unity/compare/v1.4.28...v1.4.29) (2022-01-17)
 
 #### Miscellaneous Chores
