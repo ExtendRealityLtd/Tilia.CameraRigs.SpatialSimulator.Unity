@@ -10,7 +10,7 @@
     /// <summary>
     /// Provides the description for a Simulated CameraRig node element.
     /// </summary>
-    public class SimulatorNodeRecord : DeviceDetailsRecord
+    public class SimulatorNodeRecord : BaseDeviceDetailsRecord
     {
         /// <summary>
         /// The source property to match against.
@@ -73,14 +73,7 @@
         protected const int defaultPriority = 1000;
 
         /// <inheritdoc/>
-        public override XRNode XRNodeType
-        {
-            get
-            {
-                return SimulatedNodeType;
-            }
-            protected set { SimulatedNodeType = value; }
-        }
+        public override XRNode XRNodeType { get { return SimulatedNodeType; } protected set { SimulatedNodeType = value; } }
         /// <inheritdoc/>
         public override bool IsConnected { get => SimulatedIsConnected; protected set => throw new System.NotImplementedException(); }
         /// <inheritdoc/>
@@ -99,19 +92,6 @@
         public override float BatteryLevel { get => SimulatedBatteryLevel; protected set => throw new System.NotImplementedException(); }
         /// <inheritdoc/>
         public override BatteryStatus BatteryChargeStatus { get => SimulatedBatteryChargeStatus; protected set => throw new System.NotImplementedException(); }
-
-        /// <summary>
-        /// The last known battery charge status.
-        /// </summary>
-        protected BatteryStatus lastKnownBatteryStatus;
-        /// <summary>
-        /// The last known is connected status.
-        /// </summary>
-        protected bool lastKnownIsConnected;
-        /// <summary>
-        /// The last known tracking type.
-        /// </summary>
-        protected SpatialTrackingType lastKnownTrackingType;
 
         /// <summary>
         /// Sets the <see cref="SimulatedNodeType"/>.
@@ -138,42 +118,6 @@
         public virtual void SetBatteryChargeStatus(int index)
         {
             BatteryChargeStatus = EnumExtensions.GetByIndex<BatteryStatus>(index);
-        }
-
-        /// <inheritdoc/>
-        protected override bool HasBatteryChargeStatusChanged()
-        {
-            bool hasChanged = BatteryChargeStatus != lastKnownBatteryStatus;
-            if (hasChanged)
-            {
-                BatteryChargeStatusChanged?.Invoke(BatteryChargeStatus);
-            }
-            lastKnownBatteryStatus = BatteryChargeStatus;
-            return hasChanged;
-        }
-
-        /// <inheritdoc/>
-        protected override bool HasIsConnectedChanged()
-        {
-            bool hasChanged = IsConnected != lastKnownIsConnected;
-            if (hasChanged)
-            {
-                ConnectionStatusChanged?.Invoke(IsConnected);
-            }
-            lastKnownIsConnected = IsConnected;
-            return hasChanged;
-        }
-
-        /// <inheritdoc/>
-        protected override bool HasTrackingTypeChanged()
-        {
-            bool hasChanged = TrackingType != lastKnownTrackingType;
-            if (hasChanged)
-            {
-                TrackingTypeChanged?.Invoke(TrackingType);
-            }
-            lastKnownTrackingType = TrackingType;
-            return hasChanged;
         }
     }
 }
