@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.0](https://github.com/ExtendRealityLtd/Tilia.CameraRigs.SpatialSimulator.Unity/compare/v1.5.2...v1.6.0) (2022-02-07)
+
+#### Features
+
+* **SimulatorNodeRecord:** simplify record by extending base class ([1f59aba](https://github.com/ExtendRealityLtd/Tilia.CameraRigs.SpatialSimulator.Unity/commit/1f59abaa5719542b6e747f1b76b9d757743fe71a))
+  > The SimulatorNodeRecord now extends the BaseDeviceDetailsRecord which handles many of the core functions so this class can be simplified.
+
 ### [1.5.2](https://github.com/ExtendRealityLtd/Tilia.CameraRigs.SpatialSimulator.Unity/compare/v1.5.1...v1.5.2) (2022-02-05)
 
 #### Miscellaneous Chores
