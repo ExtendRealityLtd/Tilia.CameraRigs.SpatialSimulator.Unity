@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.7.0](https://github.com/ExtendRealityLtd/Tilia.CameraRigs.SpatialSimulator.Unity/compare/v1.6.2...v1.7.0) (2022-03-01)
+
+#### Features
+
+* **package.json:** add information urls to package ([d638b6c](https://github.com/ExtendRealityLtd/Tilia.CameraRigs.SpatialSimulator.Unity/commit/d638b6ce8efd7df3a3a59d1384a5ff6e50101987))
+  > The changelog, documentation and license url has been added to the package.json as these are used within the Unity package manager.
+
 ### [1.6.2](https://github.com/ExtendRealityLtd/Tilia.CameraRigs.SpatialSimulator.Unity/compare/v1.6.1...v1.6.2) (2022-02-14)
 
 #### Miscellaneous Chores
