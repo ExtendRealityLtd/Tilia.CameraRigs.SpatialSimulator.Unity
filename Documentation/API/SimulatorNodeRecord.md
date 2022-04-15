@@ -9,9 +9,6 @@ Provides the description for a Simulated CameraRig node element.
 * [Syntax]
 * [Fields]
   * [defaultPriority]
-  * [lastKnownBatteryStatus]
-  * [lastKnownIsConnected]
-  * [lastKnownTrackingType]
 * [Properties]
   * [BatteryChargeStatus]
   * [BatteryLevel]
@@ -31,9 +28,6 @@ Provides the description for a Simulated CameraRig node element.
   * [TrackingType]
   * [XRNodeType]
 * [Methods]
-  * [HasBatteryChargeStatusChanged()]
-  * [HasIsConnectedChanged()]
-  * [HasTrackingTypeChanged()]
   * [SetBatteryChargeStatus(Int32)]
   * [SetSimulatedNodeType(Int32)]
   * [SetSimulatedTrackingType(Int32)]
@@ -52,7 +46,7 @@ Provides the description for a Simulated CameraRig node element.
 ##### Syntax
 
 ```
-public class SimulatorNodeRecord : DeviceDetailsRecord
+public class SimulatorNodeRecord : BaseDeviceDetailsRecord
 ```
 
 ### Fields
@@ -65,36 +59,6 @@ The default priority to set the simulated priority to.
 
 ```
 protected const int defaultPriority = 1000
-```
-
-#### lastKnownBatteryStatus
-
-The last known battery charge status.
-
-##### Declaration
-
-```
-protected BatteryStatus lastKnownBatteryStatus
-```
-
-#### lastKnownIsConnected
-
-The last known is connected status.
-
-##### Declaration
-
-```
-protected bool lastKnownIsConnected
-```
-
-#### lastKnownTrackingType
-
-The last known tracking type.
-
-##### Declaration
-
-```
-protected SpatialTrackingType lastKnownTrackingType
 ```
 
 ### Properties
@@ -159,7 +123,7 @@ public GameObject ReferenceSource { get; set; }
 
 #### SimulatedBatteryChargeStatus
 
-The simulated battery level.
+The simulated battery status.
 
 ##### Declaration
 
@@ -255,48 +219,6 @@ public override XRNode XRNodeType { get; protected set; }
 
 ### Methods
 
-#### HasBatteryChargeStatusChanged()
-
-##### Declaration
-
-```
-protected override bool HasBatteryChargeStatusChanged()
-```
-
-##### Returns
-
-| Type | Description |
-| --- | --- |
-| System.Boolean | n/a |
-
-#### HasIsConnectedChanged()
-
-##### Declaration
-
-```
-protected override bool HasIsConnectedChanged()
-```
-
-##### Returns
-
-| Type | Description |
-| --- | --- |
-| System.Boolean | n/a |
-
-#### HasTrackingTypeChanged()
-
-##### Declaration
-
-```
-protected override bool HasTrackingTypeChanged()
-```
-
-##### Returns
-
-| Type | Description |
-| --- | --- |
-| System.Boolean | n/a |
-
 #### SetBatteryChargeStatus(Int32)
 
 Sets the [BatteryChargeStatus].
@@ -354,9 +276,6 @@ public virtual void SetSimulatedTrackingType(int index)
 [Syntax]: #Syntax
 [Fields]: #Fields
 [defaultPriority]: #defaultPriority
-[lastKnownBatteryStatus]: #lastKnownBatteryStatus
-[lastKnownIsConnected]: #lastKnownIsConnected
-[lastKnownTrackingType]: #lastKnownTrackingType
 [Properties]: #Properties
 [BatteryChargeStatus]: #BatteryChargeStatus
 [BatteryLevel]: #BatteryLevel
@@ -376,9 +295,6 @@ public virtual void SetSimulatedTrackingType(int index)
 [TrackingType]: #TrackingType
 [XRNodeType]: #XRNodeType
 [Methods]: #Methods
-[HasBatteryChargeStatusChanged()]: #HasBatteryChargeStatusChanged
-[HasIsConnectedChanged()]: #HasIsConnectedChanged
-[HasTrackingTypeChanged()]: #HasTrackingTypeChanged
 [SetBatteryChargeStatus(Int32)]: #SetBatteryChargeStatusInt32
 [SetSimulatedNodeType(Int32)]: #SetSimulatedNodeTypeInt32
 [SetSimulatedTrackingType(Int32)]: #SetSimulatedTrackingTypeInt32

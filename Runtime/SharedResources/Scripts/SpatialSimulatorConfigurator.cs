@@ -1,29 +1,56 @@
 ﻿namespace Tilia.CameraRigs.SpatialSimulator
 {
-    using Malimbe.BehaviourStateRequirementMethod;
-    using Malimbe.MemberChangeMethod;
-    using Malimbe.PropertySerializationAttribute;
-    using Malimbe.XmlDocumentationAttribute;
     using UnityEngine;
     using UnityEngine.XR;
+    using Zinnia.Extension;
 
     /// <summary>
     /// Provides a way to configure settings related to the Spatial Simulator prefab.
     /// </summary>
     public class SpatialSimulatorConfigurator : MonoBehaviour
     {
+        [Tooltip("Determines whether any connected XR device orientation will be detected.")]
+        [SerializeField]
+        private bool xREnabled;
         /// <summary>
         /// Determines whether any connected XR device orientation will be detected.
         /// </summary>
-        [Serialized]
-        [field: DocumentedByXml]
-        public bool XREnabled { get; set; }
+        public bool XREnabled
+        {
+            get
+            {
+                return xREnabled;
+            }
+            set
+            {
+                xREnabled = value;
+                if (this.IsMemberChangeAllowed())
+                {
+                    OnAfterXREnabledChange();
+                }
+            }
+        }
+        [Tooltip("The frame rate to simulate with fixedDeltaTime.")]
+        [SerializeField]
+        private float simulatedFrameRate = 90f;
         /// <summary>
         /// The frame rate to simulate with fixedDeltaTime.
         /// </summary>
-        [Serialized]
-        [field: DocumentedByXml]
-        public float SimulatedFrameRate { get; set; } = 90f;
+        public float SimulatedFrameRate
+        {
+            get
+            {
+                return simulatedFrameRate;
+            }
+            set
+            {
+                simulatedFrameRate = value;
+                if (this.IsMemberChangeAllowed())
+                {
+                    OnAfterSimulatedFrameRateChange();
+                }
+            }
+        }
 
         protected bool initialXRSettingsEnabledState;
         protected float initialFixedDeltaTime;
@@ -45,18 +72,26 @@
         /// <summary>
         /// Called after <see cref="XREnabled"/> has been changed.
         /// </summary>
-        [RequiresBehaviourState, CalledAfterChangeOf(nameof(XREnabled))]
         protected virtual void OnAfterXREnabledChange()
         {
+            if (!this.IsValidState())
+            {
+                return;
+            }
+
             XRSettings.enabled = XREnabled;
         }
 
         /// <summary>
         /// Called after <see cref="SimulatedFrameRate"/> has been changed.
         /// </summary>
-        [RequiresBehaviourState, CalledAfterChangeOf(nameof(SimulatedFrameRate))]
         protected virtual void OnAfterSimulatedFrameRateChange()
         {
+            if (!this.IsValidState())
+            {
+                return;
+            }
+
             Time.fixedDeltaTime = Time.timeScale / SimulatedFrameRate;
         }
     }

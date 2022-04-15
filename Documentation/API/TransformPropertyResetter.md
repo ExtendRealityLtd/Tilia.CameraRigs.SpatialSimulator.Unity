@@ -17,6 +17,7 @@ Resets the saved properties of a given transform.
 * [Methods]
   * [Awake()]
   * [CacheTransformData()]
+  * [ClearTarget()]
   * [OnAfterTargetChange()]
   * [ResetProperties()]
 
@@ -111,6 +112,16 @@ Caches the initial state of the [Target] transform data.
 protected virtual void CacheTransformData()
 ```
 
+#### ClearTarget()
+
+Clears [Target].
+
+##### Declaration
+
+```
+public virtual void ClearTarget()
+```
+
 #### OnAfterTargetChange()
 
 Called after [Target] has been changed.
@@ -137,6 +148,7 @@ public virtual void ResetProperties()
 [Target]: TransformPropertyResetter.md#Target
 [Target]: TransformPropertyResetter.md#Target
 [Target]: TransformPropertyResetter.md#Target
+[Target]: TransformPropertyResetter.md#Target
 [Inheritance]: #Inheritance
 [Namespace]: #Namespace
 [Syntax]: #Syntax
@@ -150,5 +162,6 @@ public virtual void ResetProperties()
 [Methods]: #Methods
 [Awake()]: #Awake
 [CacheTransformData()]: #CacheTransformData
+[ClearTarget()]: #ClearTarget
 [OnAfterTargetChange()]: #OnAfterTargetChange
 [ResetProperties()]: #ResetProperties
