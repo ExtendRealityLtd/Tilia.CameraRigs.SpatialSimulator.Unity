@@ -1,7 +1,5 @@
 ﻿namespace Tilia.CameraRigs.SpatialSimulator
 {
-    using Malimbe.PropertySerializationAttribute;
-    using Malimbe.XmlDocumentationAttribute;
     using UnityEngine;
     using UnityEngine.XR;
     using Zinnia.Extension;
@@ -12,60 +10,159 @@
     /// </summary>
     public class SimulatorNodeRecord : BaseDeviceDetailsRecord
     {
+        [Tooltip("The source property to match against.")]
+        [SerializeField]
+        private XRNode simulatedNodeType;
         /// <summary>
         /// The source property to match against.
         /// </summary>
-        [Serialized]
-        [field: DocumentedByXml]
-        public XRNode SimulatedNodeType { get; set; }
+        public XRNode SimulatedNodeType
+        {
+            get
+            {
+                return simulatedNodeType;
+            }
+            set
+            {
+                simulatedNodeType = value;
+            }
+        }
+        [Tooltip("The simulated connection status.")]
+        [SerializeField]
+        private bool simulatedIsConnected = true;
         /// <summary>
         /// The simulated connection status.
         /// </summary>
-        [Serialized]
-        [field: DocumentedByXml]
-        public bool SimulatedIsConnected { get; set; } = true;
+        public bool SimulatedIsConnected
+        {
+            get
+            {
+                return simulatedIsConnected;
+            }
+            set
+            {
+                simulatedIsConnected = value;
+            }
+        }
+        [Tooltip("The simulated controller priority.")]
+        [SerializeField]
+        private int simulatedPriority = defaultPriority;
         /// <summary>
         /// The simulated controller priority.
         /// </summary>
-        [Serialized]
-        [field: DocumentedByXml]
-        public int SimulatedPriority { get; set; } = defaultPriority;
+        public int SimulatedPriority
+        {
+            get
+            {
+                return simulatedPriority;
+            }
+            set
+            {
+                simulatedPriority = value;
+            }
+        }
+        [Tooltip("The simulated manufacturer name.")]
+        [SerializeField]
+        private string simulatedManufacturer = "Tilia";
         /// <summary>
         /// The simulated manufacturer name.
         /// </summary>
-        [Serialized]
-        [field: DocumentedByXml]
-        public string SimulatedManufacturer { get; set; } = "Tilia";
+        public string SimulatedManufacturer
+        {
+            get
+            {
+                return simulatedManufacturer;
+            }
+            set
+            {
+                simulatedManufacturer = value;
+            }
+        }
+        [Tooltip("The simulated model name.")]
+        [SerializeField]
+        private string simulatedModel = "SpatialSimulator";
         /// <summary>
         /// The simulated model name.
         /// </summary>
-        [Serialized]
-        [field: DocumentedByXml]
-        public string SimulatedModel { get; set; } = "SpatialSimulator";
+        public string SimulatedModel
+        {
+            get
+            {
+                return simulatedModel;
+            }
+            set
+            {
+                simulatedModel = value;
+            }
+        }
+        [Tooltip("The simulated tracking type.")]
+        [SerializeField]
+        private SpatialTrackingType simulatedTrackingType = SpatialTrackingType.RotationAndPosition;
         /// <summary>
         /// The simulated tracking type.
         /// </summary>
-        [Serialized]
-        [field: DocumentedByXml]
-        public SpatialTrackingType SimulatedTrackingType { get; set; } = SpatialTrackingType.RotationAndPosition;
+        public SpatialTrackingType SimulatedTrackingType
+        {
+            get
+            {
+                return simulatedTrackingType;
+            }
+            set
+            {
+                simulatedTrackingType = value;
+            }
+        }
+        [Tooltip("The simulated battery level.")]
+        [SerializeField]
+        private float simulatedBatteryLevel = -1f;
         /// <summary>
         /// The simulated battery level.
         /// </summary>
-        [Serialized]
-        [field: DocumentedByXml]
-        public float SimulatedBatteryLevel { get; set; } = -1f;
+        public float SimulatedBatteryLevel
+        {
+            get
+            {
+                return simulatedBatteryLevel;
+            }
+            set
+            {
+                simulatedBatteryLevel = value;
+            }
+        }
+        [Tooltip("The simulated battery status.")]
+        [SerializeField]
+        private BatteryStatus simulatedBatteryChargeStatus = BatteryStatus.Unknown;
         /// <summary>
-        /// The simulated battery level.
+        /// The simulated battery status.
         /// </summary>
-        [Serialized]
-        [field: DocumentedByXml]
-        public BatteryStatus SimulatedBatteryChargeStatus { get; set; } = BatteryStatus.Unknown;
+        public BatteryStatus SimulatedBatteryChargeStatus
+        {
+            get
+            {
+                return simulatedBatteryChargeStatus;
+            }
+            set
+            {
+                simulatedBatteryChargeStatus = value;
+            }
+        }
+        [Tooltip("The source reference GameObject to determine priority from.")]
+        [SerializeField]
+        private GameObject referenceSource;
         /// <summary>
         /// The source reference GameObject to determine priority from.
         /// </summary>
-        [Serialized]
-        [field: DocumentedByXml]
-        public GameObject ReferenceSource { get; set; }
+        public GameObject ReferenceSource
+        {
+            get
+            {
+                return referenceSource;
+            }
+            set
+            {
+                referenceSource = value;
+            }
+        }
 
         /// <summary>
         /// The default priority to set the simulated priority to.

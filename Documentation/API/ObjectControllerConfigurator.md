@@ -23,6 +23,8 @@ Provides a way to configure settings related to the Object Controller prefab.
   * [RotationVerticalAxis]
   * [Target]
 * [Methods]
+  * [ClearFacingSource()]
+  * [ClearTarget()]
   * [OnAfterFacingSourceChange()]
   * [OnAfterMovementHorizontalAxisChange()]
   * [OnAfterMovementVerticalAxisChange()]
@@ -68,7 +70,7 @@ The internal FloatAction that controls the horizontal movement values.
 ##### Declaration
 
 ```
-public FloatAction InternalMovementHorizontalAxis { get; set; }
+public FloatAction InternalMovementHorizontalAxis { get; protected set; }
 ```
 
 #### InternalMovementVerticalAxis
@@ -78,7 +80,7 @@ The internal FloatAction that controls the vertical movement values.
 ##### Declaration
 
 ```
-public FloatAction InternalMovementVerticalAxis { get; set; }
+public FloatAction InternalMovementVerticalAxis { get; protected set; }
 ```
 
 #### InternalRotationCircularAxis
@@ -88,7 +90,7 @@ The internal FloatAction that controls the circular rotation values.
 ##### Declaration
 
 ```
-public FloatAction InternalRotationCircularAxis { get; set; }
+public FloatAction InternalRotationCircularAxis { get; protected set; }
 ```
 
 #### InternalRotationHorizontalAxis
@@ -98,7 +100,7 @@ The internal FloatAction that controls the horizontal rotation values.
 ##### Declaration
 
 ```
-public FloatAction InternalRotationHorizontalAxis { get; set; }
+public FloatAction InternalRotationHorizontalAxis { get; protected set; }
 ```
 
 #### InternalRotationVerticalAxis
@@ -108,7 +110,7 @@ The internal FloatAction that controls the vertical rotation values.
 ##### Declaration
 
 ```
-public FloatAction InternalRotationVerticalAxis { get; set; }
+public FloatAction InternalRotationVerticalAxis { get; protected set; }
 ```
 
 #### MovementHorizontalAxis
@@ -192,6 +194,26 @@ public GameObject Target { get; set; }
 ```
 
 ### Methods
+
+#### ClearFacingSource()
+
+Clears [FacingSource].
+
+##### Declaration
+
+```
+public virtual void ClearFacingSource()
+```
+
+#### ClearTarget()
+
+Clears [Target].
+
+##### Declaration
+
+```
+public virtual void ClearTarget()
+```
 
 #### OnAfterFacingSourceChange()
 
@@ -280,6 +302,8 @@ protected virtual void OnEnable()
 [Target]: ObjectControllerConfigurator.md#Target
 [Target]: ObjectControllerConfigurator.md#Target
 [FacingSource]: ObjectControllerConfigurator.md#FacingSource
+[Target]: ObjectControllerConfigurator.md#Target
+[FacingSource]: ObjectControllerConfigurator.md#FacingSource
 [MovementHorizontalAxis]: ObjectControllerConfigurator.md#MovementHorizontalAxis
 [MovementVerticalAxis]: ObjectControllerConfigurator.md#MovementVerticalAxis
 [RotationCircularAxis]: ObjectControllerConfigurator.md#RotationCircularAxis
@@ -305,6 +329,8 @@ protected virtual void OnEnable()
 [RotationVerticalAxis]: #RotationVerticalAxis
 [Target]: #Target
 [Methods]: #Methods
+[ClearFacingSource()]: #ClearFacingSource
+[ClearTarget()]: #ClearTarget
 [OnAfterFacingSourceChange()]: #OnAfterFacingSourceChange
 [OnAfterMovementHorizontalAxisChange()]: #OnAfterMovementHorizontalAxisChange
 [OnAfterMovementVerticalAxisChange()]: #OnAfterMovementVerticalAxisChange

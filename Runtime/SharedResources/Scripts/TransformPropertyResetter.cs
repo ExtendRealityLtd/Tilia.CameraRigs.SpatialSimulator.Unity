@@ -1,23 +1,34 @@
 ﻿namespace Tilia.CameraRigs.SpatialSimulator
 {
-    using Malimbe.BehaviourStateRequirementMethod;
-    using Malimbe.MemberChangeMethod;
-    using Malimbe.MemberClearanceMethod;
-    using Malimbe.PropertySerializationAttribute;
-    using Malimbe.XmlDocumentationAttribute;
     using UnityEngine;
+    using Zinnia.Extension;
 
     /// <summary>
     /// Resets the saved properties of a given transform.
     /// </summary>
     public class TransformPropertyResetter : MonoBehaviour
     {
+        [Tooltip("The GameObject.transform to cache and reset.")]
+        [SerializeField]
+        private GameObject target;
         /// <summary>
         /// The <see cref="GameObject.transform"/> to cache and reset.
         /// </summary>
-        [Serialized, Cleared]
-        [field: DocumentedByXml]
-        public GameObject Target { get; set; }
+        public GameObject Target
+        {
+            get
+            {
+                return target;
+            }
+            set
+            {
+                target = value;
+                if (this.IsMemberChangeAllowed())
+                {
+                    OnAfterTargetChange();
+                }
+            }
+        }
 
         /// <summary>
         /// Determines whether the properties have been cached.
@@ -37,12 +48,24 @@
         protected Vector3 initialLocalScale;
 
         /// <summary>
+        /// Clears <see cref="Target"/>.
+        /// </summary>
+        public virtual void ClearTarget()
+        {
+            if (!this.IsValidState())
+            {
+                return;
+            }
+
+            Target = default;
+        }
+
+        /// <summary>
         /// Resets to the cached properties.
         /// </summary>
-        [RequiresBehaviourState]
         public virtual void ResetProperties()
         {
-            if (Target == null || !propertiesCached)
+            if (!this.IsValidState() || Target == null || !propertiesCached)
             {
                 return;
             }
@@ -77,7 +100,6 @@
         /// <summary>
         /// Called after <see cref="Target"/> has been changed.
         /// </summary>
-        [CalledAfterChangeOf(nameof(Target))]
         protected virtual void OnAfterTargetChange()
         {
             CacheTransformData();
