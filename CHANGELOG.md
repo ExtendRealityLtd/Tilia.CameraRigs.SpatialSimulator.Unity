@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.0](https://github.com/ExtendRealityLtd/Tilia.CameraRigs.SpatialSimulator.Unity/compare/v2.0.16...v2.1.0) (2023-03-11)
+
+#### Features
+
+* **DeviceDetails:** add defaults for passthrough camera details ([a130dae](https://github.com/ExtendRealityLtd/Tilia.CameraRigs.SpatialSimulator.Unity/commit/a130daea57d4575e177c95be2ad2f461bb45f12b))
+  > The DeviceDetailsRecord now supports passthrough camera options and therefore anything that derrives from that needs to implement the base interfaces even if they don't support camera passthrough yet.
+
 ### [2.0.16](https://github.com/ExtendRealityLtd/Tilia.CameraRigs.SpatialSimulator.Unity/compare/v2.0.15...v2.0.16) (2023-02-22)
 
 #### Miscellaneous Chores
