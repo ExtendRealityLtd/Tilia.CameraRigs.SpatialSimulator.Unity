@@ -58,7 +58,7 @@ Now you have a Spatial Simulator CameraRig in your scene. If you play the Unity 
 * `2` - Activate movement/rotation of the simulated Left Controller and deactivate movement/rotation of simulated PlayArea and Right Controller.
 * `3` - Activate movement/rotation of the simulated Right Controller and deactivate movement/rotation of simulated PlayArea and Left Controller.
 * `4` - Reset the position/rotation of the simulated PlayArea back to the default settings.
-* `4` - Reset the position/rotation of the simulated Controllers back to the default settings.
+* `5` - Reset the position/rotation of the simulated Controllers back to the default settings.
 * `6` - Lock/Unlock mouse cursor to Game window.
 
 > The default input settings can be mapped to external inputs such as an Xbox controller by updated the `Sources` on the relevant `Actions` found within `CameraRigs.SpatialSimulator -> Input`.

@@ -189,6 +189,8 @@
         public override float BatteryLevel { get => SimulatedBatteryLevel; protected set => throw new System.NotImplementedException(); }
         /// <inheritdoc/>
         public override BatteryStatus BatteryChargeStatus { get => SimulatedBatteryChargeStatus; protected set => throw new System.NotImplementedException(); }
+        /// <inheritdoc/>
+        public override bool HasPassThroughCamera { get => false; protected set => throw new System.NotImplementedException(); }
 
         /// <summary>
         /// Sets the <see cref="SimulatedNodeType"/>.

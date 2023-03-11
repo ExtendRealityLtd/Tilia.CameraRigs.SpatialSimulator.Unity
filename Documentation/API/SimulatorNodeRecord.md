@@ -12,6 +12,7 @@ Provides the description for a Simulated CameraRig node element.
 * [Properties]
   * [BatteryChargeStatus]
   * [BatteryLevel]
+  * [HasPassThroughCamera]
   * [IsConnected]
   * [Manufacturer]
   * [Model]
@@ -77,6 +78,14 @@ public override BatteryStatus BatteryChargeStatus { get; protected set; }
 
 ```
 public override float BatteryLevel { get; protected set; }
+```
+
+#### HasPassThroughCamera
+
+##### Declaration
+
+```
+public override bool HasPassThroughCamera { get; protected set; }
 ```
 
 #### IsConnected
@@ -279,6 +288,7 @@ public virtual void SetSimulatedTrackingType(int index)
 [Properties]: #Properties
 [BatteryChargeStatus]: #BatteryChargeStatus
 [BatteryLevel]: #BatteryLevel
+[HasPassThroughCamera]: #HasPassThroughCamera
 [IsConnected]: #IsConnected
 [Manufacturer]: #Manufacturer
 [Model]: #Model
