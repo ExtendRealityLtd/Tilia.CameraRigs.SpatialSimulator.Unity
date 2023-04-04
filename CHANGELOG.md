@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.2.0](https://github.com/ExtendRealityLtd/Tilia.CameraRigs.SpatialSimulator.Unity/compare/v2.1.13...v2.2.0) (2023-04-04)
+
+#### Features
+
+* **Resources:** update materials to use tilia shader ([27e6a6e](https://github.com/ExtendRealityLtd/Tilia.CameraRigs.SpatialSimulator.Unity/commit/27e6a6e1748d88606943d38f5da7787877e1e90d))
+  > The tilia unlit shader supports all current render pipelines, whereas the built in standard shader does not support SRP pipelines so would render the material as pink. Using the Tilia unlit shader means these materials will work across all pipelines.
+
 ### [2.1.13](https://github.com/ExtendRealityLtd/Tilia.CameraRigs.SpatialSimulator.Unity/compare/v2.1.12...v2.1.13) (2023-04-03)
 
 #### Miscellaneous Chores
