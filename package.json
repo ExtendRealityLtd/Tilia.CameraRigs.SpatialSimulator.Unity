@@ -35,7 +35,7 @@
     "dependencies": {
         "io.extendreality.zinnia.unity": "2.16.0",
         "io.extendreality.tilia.utilities.shaders.unity": "1.4.0",
-        "io.extendreality.tilia.input.unityinputmanager": "2.1.12"
+        "io.extendreality.tilia.input.unityinputmanager": "2.1.13"
     },
     "files": [
         "*.md",
